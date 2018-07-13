@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf13950754401070" configfile="/Paginacao/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="consultaCurso" id="pf139507551547312" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf139507551547313" path="/consultarCurso.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="index" id="pf139507551547314" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" inlinks="pf139507551547313" path="/index.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="*" id="pf139507554788818" outlinks="pf139507554788819" path="*"/>
+  <nodes xsi:type="pageflow:PFPage" name="consultarCurso" id="pf139507554788820" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf139507554788819" path="/consultarCurso.jsp"/>
+  <links id="pf139507551547313" target="pf139507551547314" source="pf139507551547312" outcome="cancelar" redirect="true"/>
+  <links id="pf139507554788819" target="pf139507554788820" source="pf139507554788818" redirect="true" fromaction="#{cursoBacking.consultarCurso}"/>
+</pageflow:Pageflow>
